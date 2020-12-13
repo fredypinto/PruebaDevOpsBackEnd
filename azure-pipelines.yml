@@ -5,13 +5,9 @@
 
 trigger:
 - main
-
-pool:
-  vmImage: 'ubuntu-latest'
-
 pool:
     name: Default
-  steps:
+steps:
   - checkout: self
   - task: UseDotNet@2
     displayName: Use .NET Core sdk 5.0.101
